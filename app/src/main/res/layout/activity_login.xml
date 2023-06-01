@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".LoginActivity"
+    >
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="86dp" />
+
+    <TextView
+        android:id="@+id/pyassa"
+        android:layout_width="224dp"
+        android:layout_height="83dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="PYASSA"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+    <View
+        android:id="@+id/Blackline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_below="@+id/pyassa"/>
+
+
+    <TextView
+        android:id="@+id/quotelg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pyassa"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="You'll Find The Perfect Pyassa For You!! LOGIN"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/emailsignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pyassa"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="20dp"
+        android:hint="Email"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_edit_text"
+
+        />
+
+
+    <EditText
+        android:id="@+id/passwordlg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailsignup"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_edit_text"
+        android:drawableLeft="@drawable/baseline_info_24"
+        android:drawableRight="@drawable/baseline_visibility_24"
+        android:drawablePadding="20dp"
+        android:longClickable="false"
+        android:hint="Password"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:inputType="textPassword"/>
+
+
+
+    <Button
+        android:id="@+id/forpassBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_layout_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_rect_shape"
+        android:text="LOGIN"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/passwordlg"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:gravity="center|end"
+            android:id="@+id/forget_password_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="70dp"
+            android:text="Forget Password?"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:layout_marginStart="20dp"
+
+            />
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/signupRedirectLink"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forpassBtn"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="71dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="74dp"
+        android:gravity="center"
+        android:text="Create New Acoount?"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+
+
+</RelativeLayout>

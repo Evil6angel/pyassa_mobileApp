@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingStart="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <ImageView
+                android:id="@+id/back_pressed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:src="@drawable/baseline_arrow_back_24" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My Information"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/appPurple"/>
+
+            <ImageView
+                android:id="@+id/cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:src="@drawable/baseline_add_shopping_cart_24"
+
+                />
+
+        </RelativeLayout>
+
+
+        <!-- User Information Section -->
+
+    <EditText
+        android:id="@+id/etFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First Name"
+        android:textSize="20sp"
+        android:background="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/etLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Last Name"
+        android:textSize="20sp"
+        android:background="@color/white"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textSize="20sp"
+        android:background="@color/white"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:textSize="20sp"
+        android:background="@color/white"
+        android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:textColor="@color/appBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shipping Information"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/editTextAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:textSize="20sp"
+            android:background="@color/white"
+            />
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:id="@+id/editTextCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City"
+            android:textSize="20sp"
+            android:background="@color/white"
+            />
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:id="@+id/editTextZipCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Zip Code"
+            android:textSize="20sp"
+            android:background="@color/white"
+            />
+        <TextView
+            android:textColor="@color/appBlue"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Method"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/editTextCardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Card Number"
+            android:textSize="20sp"
+            android:background="@color/white"
+            />
+        <EditText
+            android:layout_marginTop="5dp"
+            android:id="@+id/editTextCardHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Card Holder"
+            android:textSize="20sp"
+            android:background="@color/white"
+            />
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:id="@+id/editTextCvv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CVV"
+            android:textSize="20sp"
+            android:background="@color/white"
+            />
+        <TextView
+            android:textColor="@color/appBlue"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Experation Date"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+        <Spinner
+            android:layout_marginTop="5dp"
+            android:id="@+id/spinnerExpirationMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/months_array"
+
+            />
+
+        <Spinner
+            android:layout_marginTop="5dp"
+            android:id="@+id/spinnerExpirationYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/years"
+
+            />
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+
+            <TextView
+                android:id="@+id/textViewTotalAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$0.00"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/appPurple"
+                />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/placeOrderButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="place Order"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/round_rect_shape"
+            android:padding="16dp"
+            android:layout_margin="16dp"
+            android:gravity="center" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

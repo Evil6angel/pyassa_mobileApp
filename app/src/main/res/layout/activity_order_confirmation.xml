@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".OrderConfirmationActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/order_confirmation_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Order Confirmation"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginVertical="16dp"/>
+
+    <TextView
+        android:id="@+id/order_confirmation_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thank you for your order!"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/order_confirmation_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="WE WILL GET BACK TO YOU SOON"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginVertical="16dp"/>
+
+    <TextView
+        android:id="@+id/order_confirmation_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/order_confirmation_done_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Done"
+        android:textColor="@color/white"
+        android:background="@drawable/round_rect_shape"/>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "823492384940",
+    "project_id": "mypyassa",
+    "storage_bucket": "mypyassa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:823492384940:android:c6bff02d01f0f276c3a709",
+        "android_client_info": {
+          "package_name": "com.example.mynewpyassa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "823492384940-sa08jol0kb0us7tbds8qj1f2bu0ralmq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUDzMk5YRQVp3LE-CdycZlUKEVgpaKnyU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "823492384940-sa08jol0kb0us7tbds8qj1f2bu0ralmq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
